@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/pexels-miguel-á-padriñán-19670.jpg');
+}
+
+:root {
+    --primary-color: #4458dc;
+    --secondary-color: #061157;
+    --bg-blue: #061157;
+    --bg-white: #fff;
+    --bg-light: #faf8ff;
+    --bg-black: #000;
+    --bg-gray: #eee;
+    --gradient: linear-gradient(to right, #4458dc 0%, #061157 100%), radial-gradient(circle at top left, #4458dc, #061157);
+
+
+    --primary-text: #4458dc;
+    --secondary-text: #061157;
+    --text-white: #fff;
+    --text-gray: #eee;
+    --text-black: #000;
+
+
+}
+
+body {
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-blue);
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.main-btn {
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 2.875rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.625rem 1.875rem rgb(118 85 255 / 30%);
+    border: double 0.125rem transparent;
+    padding: 0 2.625rem;
+    transition: all .3s ease-in-out;
+}
+
+.primary-btn {
+    background-image: var(--gradient);
+    color: var(--text-white);
+}
+
+.primary-btn:hover {
+    border-color: var(--secondary-color);
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    box-shadow: none;
+}
+
+.secondary-btn {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-image: var(--bg-white);
+
+}
+
+.secondary-btn:hover {
+    background: var(--gradient);
+    color: var(--text-white);
+    box-shadow: none;
+}
+
+h1 {
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 1.25rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.4375rem;
+    font-weight: 500;
+    color: var(--text-black);
+    margin-bottom: 1.5625rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h3 {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 0.9375rem;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-black);
+    margin-bottom: 2.1875rem;
+}
+
+p {
+    color: var(--text-black);
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+
+}
+
+.header_wrapper .navbar {
+    padding: 0.9375rem 0;
+    transition: all .2s linear;
+}
+
+.header_wrapper .navbar-brand span {
+    color: var(--secondary-text);
+    font-size: 2.75rem;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+
+
+.header_wrapper .navbar-toggle:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 0.625rem;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text-black);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link.active,
+.header_wrapper .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    box-shadow: 0 0.25rem 0.375rem rgba(12, 0, 46, .05);
+}
+
+
+/* navbar */
+
+.banner_wrapper {
+    padding-top: 6.875rem;
+    z-index: 1;
+}
+
+.banner_wrapper .banner-content {
+    vertical-align: middle;
+    align-self: center;
+}
+
+
+/* banner */
+
+
+/* services */
+
+.services_wrapper .card {
+    background-color: var(--bg-light);
+    cursor: pointer;
+    transition: all .4s ease 0s;
+
+}
+
+.services_wrapper .card:hover {
+    box-shadow: 0 0.9375rem 1.875rem rgb(77 87 222 / 30%);
+    background: var(--bg-white);
+}
+
+
+
+.footer_wrapper .social-icons li {
+    margin: 0.375rem;
+}
+
+.footer_wrapper .social-icons li a {
+    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    display: inline-block;
+    color: var(--text-black);
+    text-align: center;
+    margin: 0 0.625rem;
+}
+
+.footer_wrapper .social-icons li a:hover {
+    color: var(--secondary-color);
+}
+
+.footer_wrapper .footer-text {
+    font-size: 0.6875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+.download .timer{
+    color: #000;
+    font-size: 1.6rem;
+    pointer-events: none;
+    transition: none;
+
+}
+.download .timer b{
+    color: blue;
+    padding: 0 8px;
+}
